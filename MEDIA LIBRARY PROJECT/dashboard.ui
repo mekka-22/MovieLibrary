@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1040</width>
+    <height>598</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLineEdit" name="search_bar">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>40</y>
+     <width>441</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 2px solid #666666;
+font: 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 8px;
+
+</string>
+   </property>
+   <property name="inputMask">
+    <string/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+   </property>
+   <property name="placeholderText">
+    <string>Enter Movie Title..</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="search_button">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>50</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/search-alt.png</normaloff>icons/search-alt.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>26</width>
+     <height>41</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="name_label">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>190</y>
+     <width>281</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="menu_button">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>50</y>
+     <width>51</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/menu.png</normaloff>icons/menu.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>27</width>
+     <height>25</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>40</y>
+     <width>50</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>icons/logo.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>50</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 87 16pt &quot;Arial Black&quot;;</string>
+   </property>
+   <property name="text">
+    <string>MovieLibby</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="menu_container" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>100</y>
+     <width>161</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item alignment="Qt::AlignLeft">
+     <widget class="QPushButton" name="home_button">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(29,29,29);
+color: rgb(255, 255, 255);
+font: 87 11pt &quot;Arial Black&quot;;
+border-radius: 10px;
+   
+ padding: 8px 16px;
+  border: 1px solid ;</string>
+      </property>
+      <property name="text">
+       <string>Home</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>icons/home.png</normaloff>icons/home.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item alignment="Qt::AlignLeft">
+     <widget class="QPushButton" name="favourites_button">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0,0,0);
+color: rgb(255, 255, 255);
+font: 87 11pt &quot;Arial Black&quot;;
+border-radius: 10px;
+   
+    padding: 8px 16px;
+    border: 1px solid ;
+</string>
+      </property>
+      <property name="text">
+       <string>Favourites</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>icons/star.png</normaloff>icons/star.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item alignment="Qt::AlignLeft">
+     <widget class="QPushButton" name="watched_button">
+      <property name="styleSheet">
+       <string notr="true">bbackground-color: rgb(0,0,0);
+color: rgb(255, 255, 255);
+font: 87 11pt &quot;Arial Black&quot;;
+border-radius: 10px;
+   
+    padding: 8px 16px;
+    border: 1px solid ;
+</string>
+      </property>
+      <property name="text">
+       <string>Watchlist</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>icons/tv.png</normaloff>icons/tv.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item alignment="Qt::AlignLeft">
+     <widget class="QPushButton" name="allmovies_button">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0,0,0);
+color: rgb(255, 255, 255);
+font: 87 11pt &quot;Arial Black&quot;;
+border-radius: 10px;
+   
+    padding: 8px 16px;
+    border: 1px solid ;
+</string>
+      </property>
+      <property name="text">
+       <string>All Movies</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>icons/film-roll-alt.png</normaloff>icons/film-roll-alt.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item alignment="Qt::AlignLeft">
+     <widget class="QPushButton" name="logout_button">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0,0,0);
+color: rgb(255, 255, 255);
+font: 87 11pt &quot;Arial Black&quot;;
+border-radius: 10px;
+   
+    padding: 8px 16px;
+    border: 1px solid ;
+</string>
+      </property>
+      <property name="text">
+       <string>Logout</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>icons/arrow-out-right-square-half (3).png</normaloff>icons/arrow-out-right-square-half (3).png</iconset>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>-10</y>
+     <width>1081</width>
+     <height>621</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>icons/dark-abstract-background.jpg</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>120</y>
+     <width>751</width>
+     <height>391</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+background-color: rgb(0, 0, 0);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="3">
+     <widget class="QPushButton" name="viewButton_4">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QPushButton" name="viewButton_9">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QPushButton" name="viewButton_3">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="4">
+     <widget class="QPushButton" name="viewButton_5">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QPushButton" name="viewButton_7">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QPushButton" name="viewButton_2">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QPushButton" name="viewButton_6">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="4">
+     <widget class="QPushButton" name="viewButton_10">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QPushButton" name="viewButton_8">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QPushButton" name="viewButton_1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>176</width>
+        <height>301</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="more_button">
+   <property name="geometry">
+    <rect>
+     <x>890</x>
+     <y>520</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>more..</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="page_counter">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>520</y>
+     <width>21</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(41, 41, 41);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>9</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>520</y>
+     <width>31</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(41, 41, 41);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>10</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>520</y>
+     <width>16</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(41, 41, 41);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>of</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <zorder>label</zorder>
+  <zorder>search_bar</zorder>
+  <zorder>search_button</zorder>
+  <zorder>name_label</zorder>
+  <zorder>menu_button</zorder>
+  <zorder>label_2</zorder>
+  <zorder>label_3</zorder>
+  <zorder>menu_container</zorder>
+  <zorder>frame</zorder>
+  <zorder>more_button</zorder>
+  <zorder>page_counter</zorder>
+  <zorder>label_5</zorder>
+  <zorder>label_6</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

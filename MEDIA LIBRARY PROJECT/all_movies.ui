@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1077</width>
+    <height>696</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>-40</y>
+     <width>1131</width>
+     <height>741</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>icons/dark-abstract-background.jpg</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QWidget" name="menu_container" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>90</y>
+     <width>161</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item alignment="Qt::AlignLeft">
+     <widget class="QPushButton" name="home_button">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+font: 87 11pt &quot;Arial Black&quot;;
+border-radius: 10px;
+padding: 8px 16px;
+border: 1px solid ;</string>
+      </property>
+      <property name="text">
+       <string>Home</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>icons/home.png</normaloff>icons/home.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item alignment="Qt::AlignLeft">
+     <widget class="QPushButton" name="favourites_button">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+font: 87 11pt &quot;Arial Black&quot;;
+border-radius: 10px;
+   
+ padding: 8px 16px;
+  border: 1px solid ;</string>
+      </property>
+      <property name="text">
+       <string>Favourites</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>icons/star.png</normaloff>icons/star.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item alignment="Qt::AlignLeft">
+     <widget class="QPushButton" name="watched_button">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+font: 87 11pt &quot;Arial Black&quot;;
+border-radius: 10px;
+   
+ padding: 8px 16px;
+  border: 1px solid ;</string>
+      </property>
+      <property name="text">
+       <string>Watchlist</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>icons/tv.png</normaloff>icons/tv.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item alignment="Qt::AlignLeft">
+     <widget class="QPushButton" name="allmovies_button">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(29,29,29);
+color: rgb(255, 255, 255);
+font: 87 11pt &quot;Arial Black&quot;;
+border-radius: 10px;
+   
+ padding: 8px 16px;
+  border: 1px solid ;</string>
+      </property>
+      <property name="text">
+       <string>All Movies</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>icons/film-roll-alt.png</normaloff>icons/film-roll-alt.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item alignment="Qt::AlignLeft">
+     <widget class="QPushButton" name="logout_button">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+font: 87 11pt &quot;Arial Black&quot;;
+border-radius: 10px;
+   
+ padding: 8px 16px;
+  border: 1px solid ;</string>
+      </property>
+      <property name="text">
+       <string>Logout</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>icons/arrow-out-right-square-half (3).png</normaloff>icons/arrow-out-right-square-half (3).png</iconset>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>40</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 87 16pt &quot;Arial Black&quot;;</string>
+   </property>
+   <property name="text">
+    <string>MovieLibby</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="name_label">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>180</y>
+     <width>281</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>30</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>icons/logo.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="menu_button">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>40</y>
+     <width>51</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/menu.png</normaloff>icons/menu.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>27</width>
+     <height>25</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="allmovies_table">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>190</y>
+     <width>661</width>
+     <height>481</height>
+    </rect>
+   </property>
+   <property name="gridStyle">
+    <enum>Qt::SolidLine</enum>
+   </property>
+   <attribute name="horizontalHeaderCascadingSectionResizes">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>132</number>
+   </attribute>
+   <attribute name="horizontalHeaderStretchLastSection">
+    <bool>false</bool>
+   </attribute>
+   <column>
+    <property name="text">
+     <string>Title</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Genre</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Year</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Runtime</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Rating</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QComboBox" name="genre_combo">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>140</y>
+     <width>91</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Action</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Adventure</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Animation</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Biography</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Comedy</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Crime</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Documentary</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Drama</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Family</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Fantasy</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Film-Noir</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Horror</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Music</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Musical</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Mystery</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Romance</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Sci-Fi</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Short</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Sport</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Thriller</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>War</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Western</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QDoubleSpinBox" name="ratings_spinbox_1">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>140</y>
+     <width>62</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="decimals">
+    <number>1</number>
+   </property>
+   <property name="minimum">
+    <double>1.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>10.000000000000000</double>
+   </property>
+   <property name="singleStep">
+    <double>0.100000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="ratings_spinbox_2">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>140</y>
+     <width>62</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="decimals">
+    <number>1</number>
+   </property>
+   <property name="minimum">
+    <double>1.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>10.000000000000000</double>
+   </property>
+   <property name="singleStep">
+    <double>0.100000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>140</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>to</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="filter_button">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>100</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(29,29,29);
+color: rgb(255, 255, 255);
+font: 87 8pt &quot;Arial Black&quot;;
+border-radius: 10px;
+   
+ padding: 8px 16px;
+  border: 1px solid ;</string>
+   </property>
+   <property name="text">
+    <string>APPLY FILTER</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>68</width>
+     <height>78</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>196</x>
+     <y>140</y>
+     <width>51</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Genres:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>436</x>
+     <y>140</y>
+     <width>71</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>ImdbRatings:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>100</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Filter by:</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="genre_checkbox">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>100</y>
+     <width>70</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Genres</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="ratings_checkbox">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>100</y>
+     <width>70</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Ratings</string>
+   </property>
+  </widget>
+  <zorder>label</zorder>
+  <zorder>menu_button</zorder>
+  <zorder>label_4</zorder>
+  <zorder>label_3</zorder>
+  <zorder>name_label</zorder>
+  <zorder>menu_container</zorder>
+  <zorder>allmovies_table</zorder>
+  <zorder>genre_combo</zorder>
+  <zorder>ratings_spinbox_1</zorder>
+  <zorder>ratings_spinbox_2</zorder>
+  <zorder>label_2</zorder>
+  <zorder>filter_button</zorder>
+  <zorder>label_5</zorder>
+  <zorder>label_6</zorder>
+  <zorder>label_8</zorder>
+  <zorder>genre_checkbox</zorder>
+  <zorder>ratings_checkbox</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
